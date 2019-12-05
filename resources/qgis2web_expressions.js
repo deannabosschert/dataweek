@@ -763,3 +763,30 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
+
+
+
+function exp_Joinedlayer_1rule0_eval_expression(context) {
+    // NUMUITGAAN > NUMPOINTS
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.get('NUMUITGAAN')  > feature.get('NUMPOINTS') );
+    } else {
+        return (feature.get('NUMUITGAAN')  > feature.get('NUMPOINTS') );
+    }
+}
+
+
+function exp_Joinedlayer_1rule1_eval_expression(context) {
+    // NUMPOINTS > NUMUITGAAN
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.get('NUMPOINTS')  > feature.get('NUMUITGAAN') );
+    } else {
+        return (feature.get('NUMPOINTS')  > feature.get('NUMUITGAAN') );
+    }
+}
